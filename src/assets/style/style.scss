@@ -1,0 +1,401 @@
+/* css初始化 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { box-sizing:border-box;}
+body {background:#fff; color:#525252; font-family:  "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#525252; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; content: normal !important;}
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+ul,p{display: block;margin-block-start: 0;margin-block-end: 0;margin-inline-start: 0px;margin-inline-end: 0px;}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.b-box{
+    box-sizing:border-box!important;
+}
+.overhidden {
+    overflow: hidden!important;
+}
+.t-left{
+    text-align: left!important;
+}
+.t-center{
+    text-align: center!important;
+}
+.t-right{
+    text-align: right!important;
+}
+.relative{
+    position: relative!important;
+}
+.absolute{
+    position: absolute!important;
+}
+.fixed{
+    position: fixed!important;
+}
+.fixed-x{
+    justify-content: center!important;
+}
+.fixed-y{
+    align-items: center!important;
+    align-content: center!important;
+}
+.center-x{
+    left: 50%!important;
+    transform: translateX(-50%)!important;
+}
+/* 单行文本超出省略... */
+.ellipsis{
+    text-overflow:ellipsis!important; 
+    overflow:hidden!important;
+    white-space:nowrap!important;
+}
+@for $i from 1 through 20 {
+    .p#{$i * 5} { padding: 5px * $i!important; };
+    .pl#{$i * 5} { padding-left: 5px * $i!important; };
+    .pr#{$i * 5} { padding-right: 5px * $i!important; };
+    .pt#{$i * 5} { padding-top: 5px * $i!important; };
+    .pb#{$i * 5} { padding-bottom: 5px * $i!important; }
+    .m#{$i * 5} { margin: 5px * $i!important; };
+    .ml#{$i * 5} { margin-left: 5px * $i!important; };
+    .mr#{$i * 5} { margin-right: 5px * $i!important; };
+    .mt#{$i * 5} { margin-top: 5px * $i!important; };
+    .mb#{$i * 5} { margin-bottom: 5px * $i!important; }
+}
+@for $i from 1 through 20 {
+    .z-index-#{$i} { z-index: $i!important; }
+}
+// @for $i from 6 through 20 {
+//     .fs#{$i * 2} { font-size: 2px * $i!important; }
+// }
+.h20{
+    height: 20px!important;
+}
+.h30{
+    height: 30px!important;
+}
+.h40{
+    height: 40px!important;
+}
+.lh20{
+    line-height: 20px!important;
+}
+.lh30{
+    line-height: 30px!important;
+}
+.lh40{
+    line-height: 40px!important;
+}
+.fw200{
+    font-weight: 200!important;
+}
+.pointer{
+    cursor: pointer!important;
+}
+.not-allowed{
+    cursor: not-allowed!important;
+}
+.block{
+    display: block!important;
+}
+.inline-block{
+    display: inline-block!important;
+}
+.flex{
+    display: flex!important;
+}
+.inline-flex{
+    display: inline-flex!important;
+}
+@for $i from 1 through 10 {
+    .flex-#{$i} { flex: $i!important; }
+}
+/* css3动画 */
+.animate{
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+/* vue加载避免{{}} */
+[v-cloak] {
+    display: none;
+}
+.black1{
+    color: #525252 !important;
+}
+.black2{
+    color: #202020 !important;
+}
+.black3{
+    color: rgb(0, 0, 0) !important;
+}
+.white1{
+    color: #ffffff !important;
+}
+.w100{
+    width: 100% !important;
+}
+.w100_m{
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+.w50{
+    width: 50% !important;
+}
+.w50_m{
+    width: 50% !important;
+    min-width: 50% !important;
+    max-width: 50% !important;
+}
+.w25{
+    width: 25% !important;
+}
+.w25_m{
+    width: 25% !important;
+    min-width: 25% !important;
+    max-width: 25% !important;
+}
+
+//  小于1280px
+@media screen and (max-width: 1280px) {
+    .fs12{
+        font-size: 12px !important;
+    }
+    .fs14{
+        font-size: 12px !important;
+    }
+    .fs16{
+        font-size: 14px !important;
+    }
+    .fs18{
+        font-size: 16px !important;
+    }
+    .fs20{
+        font-size: 18px !important;
+    }
+    .fs22{
+        font-size: 20px !important;
+    }
+    .fs24{
+        font-size: 22px !important;
+    }        
+    .fs26{
+        font-size: 24px !important;
+    }
+    .fs30{
+        font-size: 26px !important;
+    }
+    .fs32{
+        font-size: 28px !important;
+    }
+    .fs36{
+        font-size: 32px !important;
+    }
+    .fs60{
+        font-size: 48px !important;
+    }
+}
+// 大于1280px 小于1366px
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+    .fs12{
+        font-size: 12px !important;
+    }
+    .fs14{
+        font-size: 12px !important;
+    }
+    .fs16{
+        font-size: 14px !important;
+    }
+    .fs18{
+        font-size: 16px !important;
+    }
+    .fs20{
+        font-size: 18px !important;
+    }
+    .fs22{
+        font-size: 20px !important;
+    }
+    .fs24{
+        font-size: 22px !important;
+    }
+    .fs26{
+        font-size: 24px !important;
+    }
+    .fs30{
+        font-size: 26px !important;
+    }
+    .fs32{
+        font-size: 28px !important;
+    }
+     .fs36{
+        font-size: 32px !important;
+    }
+    .fs60{
+        font-size: 48px !important;
+    }
+}
+// 大于1366px 小于1440px
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+    .fs12{
+        font-size: 12px !important;
+    }
+    .fs14{
+        font-size: 12px !important;
+    }
+    .fs16{
+        font-size: 14px !important;
+    }
+    .fs18{
+        font-size: 16px !important;
+    }
+    .fs20{
+        font-size: 18px !important;
+    }
+    .fs22{
+        font-size: 20px !important;
+    }
+    .fs24{
+        font-size: 22px !important;
+    }
+    .fs26{
+        font-size: 24px !important;
+    }
+    .fs30{
+        font-size: 26px !important;
+    }
+    .fs32{
+        font-size: 28px !important;
+    }
+     .fs36{
+        font-size: 32px !important;
+    }
+    .fs60{
+        font-size: 48px !important;
+    }
+}
+// 大于1440px 小于 1680px
+@media screen and (min-width: 1440px) and (max-width: 1680px) {
+    .fs12{
+        font-size: 12px !important;
+    }
+    .fs14{
+        font-size: 12px !important;
+    }
+    .fs16{
+        font-size: 14px !important;
+    }
+    .fs18{
+        font-size: 16px !important;
+    }
+    .fs20{
+        font-size: 18px !important;
+    }
+    .fs22{
+        font-size: 20px !important;
+    }
+    .fs24{
+        font-size: 22px !important;
+    }
+    .fs26{
+        font-size: 24px !important;
+    }
+    .fs30{
+        font-size: 28px !important;
+    }
+    .fs32{
+        font-size: 30px !important;
+    }
+     .fs36{
+        font-size: 34px !important;
+    }
+    .fs60{
+        font-size: 52px !important;
+    }
+}
+// 大于1680px 小于1920px
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+    .fs12{
+        font-size: 12px !important;
+    }
+    .fs14{
+        font-size: 12px !important;
+    }
+    .fs16{
+        font-size: 14px !important;
+    }
+    .fs18{
+        font-size: 16px !important;
+    }
+    .fs20{
+        font-size: 18px !important;
+    }
+    .fs22{
+        font-size: 20px !important;
+    }
+    .fs24{
+        font-size: 22px !important;
+    }
+    .fs26{
+        font-size: 24px !important;
+    }
+    .fs30{
+        font-size: 28px !important;
+    }
+    .fs32{
+        font-size: 30px !important;
+    }
+     .fs36{
+        font-size: 34px !important;
+    }
+    .fs60{
+        font-size: 52px !important;
+    }
+}
+// 大于 1920px
+@media screen and (min-width: 1920px) {
+    .fs12{
+        font-size: 12px !important;
+    }
+    .fs14{
+        font-size: 14px !important;
+    }
+    .fs16{
+        font-size: 16px !important;
+    }
+    .fs18{
+        font-size: 18px !important;
+    }
+    .fs20{
+        font-size: 20px !important;
+    }
+    .fs22{
+        font-size: 22px !important;
+    }
+    .fs26{
+        font-size: 26px !important;
+    }
+    .fs24{
+        font-size: 24px !important;
+    }
+    .fs30{
+        font-size: 30px !important;
+    }
+    .fs32{
+        font-size: 32px !important;
+    }
+     .fs36{
+        font-size: 36px !important;
+    }
+    .fs60{
+        font-size: 60px !important;
+    }
+}
