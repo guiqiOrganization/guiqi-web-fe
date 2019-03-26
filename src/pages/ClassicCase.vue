@@ -133,7 +133,10 @@
                 <div class="hp-s10-i-detail fs16 black2">
                   {{ aitem.detail }}
                 </div>
-                <div class="hp-s10-i-href fs16 mt60" @click.stop="goArticle">
+                <div
+                  class="hp-s10-i-href fs16 mt60"
+                  @click.stop="goArticle(aidx)"
+                >
                   查看全文>>
                 </div>
               </div>
@@ -168,8 +171,13 @@ export default {
     console.log(JSON.stringify(this.article));
   },
   methods: {
-    goArticle() {
-      this.$router.push({ name: "Article" });
+    goArticle(index) {
+      this.$router.push({
+        name: "Article",
+        query: {
+          index: index
+        }
+      });
     }
   }
 };

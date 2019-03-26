@@ -12,67 +12,60 @@
         <div class="foot-top-right absolute flex">
           <div class="ftr-href flex">
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('HomePage')"
             >
               首页
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('EmotionalRecovery')"
             >
               情感挽回
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('MarriageSalvage')"
             >
               婚姻挽回
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('AbruptionMistress')"
             >
               分离第三者
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('LoveSnipe')"
             >
               狙击真爱
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('AboutTeam')"
             >
               团队介绍
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('ClassicCase')"
             >
               经典案例
             </div>
             <div
-              class="ftr-href-section w25_m fs14 white1"
+              class="ftr-href-section w25_m fs16 white1"
               @click.stop="headerRoute('ServiceConcept')"
             >
               服务理念
             </div>
-            <div class="ftr-href-section w25_m fs14 white1">服务咨询</div>
-            <div class="ftr-href-section w25_m fs14 white1">友情链接</div>
-            <div class="ftr-href-section w50_m fs14 white1">
+            <div class="ftr-href-section w25_m fs16 white1">服务咨询</div>
+            <div class="ftr-href-section w25_m fs16 white1">友情链接</div>
+            <div class="ftr-href-section w50_m fs16 white1">
               服务热线：400-0173-520
             </div>
           </div>
           <div class="ftr-qcode flex">
-            <div class="foot-top-qcode-item">
-              <img
-                class="w100"
-                :src="`${baseUrl}statics/images/index/foot_qcode1.png`"
-                alt
-              />
-            </div>
             <div class="foot-top-qcode-item">
               <img
                 class="w100"
@@ -125,7 +118,7 @@ export default {
         top: 40px;
         right: 0;
         .ftr-href {
-          width: 480px;
+          width: 610px;
           flex-wrap: wrap;
           margin-right: 0px;
           .ftr-href-section {

@@ -1,6 +1,6 @@
 <template>
   <div class="head-cont relative">
-    <div class="head-body absolute z-index-2 head-body-w">
+    <div class="head-body absolute z-index-9 head-body-w">
       <div class="head-logo w100 relative">
         <div class="head-logo-logo">
           <img
@@ -14,7 +14,7 @@
             <div class="hlm-item-icon relative overhidden">
               <img
                 class="hlm-item-icon-img w100 absolute"
-                :src="`${baseUrl}statics/images/index/header_icon.png`"
+                :src="`${baseUrl}statics/images/index/header_icon_1.png`"
                 alt
               />
             </div>
@@ -24,7 +24,7 @@
             <div class="hlm-item-icon relative overhidden">
               <img
                 class="hlm-item-icon-img w100 absolute"
-                :src="`${baseUrl}statics/images/index/header_icon.png`"
+                :src="`${baseUrl}statics/images/index/header_icon_2.png`"
                 alt
               />
             </div>
@@ -34,7 +34,7 @@
             <div class="hlm-item-icon relative overhidden">
               <img
                 class="hlm-item-icon-img w100 absolute"
-                :src="`${baseUrl}statics/images/index/header_icon.png`"
+                :src="`${baseUrl}statics/images/index/header_icon_3.png`"
                 alt
               />
             </div>
@@ -52,7 +52,8 @@
             <div
               class="hmb-item-label t-center fs16 pointer"
               :class="{ 'header-active': currentActive == mitem.value }"
-              @click.stop="collaspe(mitem, midx)"
+              @click.stop="collaspe(mitem, midx, 'click')"
+              @mouseenter="collaspe(mitem, midx, 'hover')"
             >
               {{ mitem.label }}
             </div>
@@ -60,12 +61,13 @@
               class="hmb-item-arraw pointer animate"
               :class="{ 'hmb-item-arraw__active': mitem.collaspe }"
               v-if="mitem.children.length != 0"
-              @click.stop="collaspe(mitem, midx)"
+              @mouseenter="collaspe(mitem, midx)"
             ></div>
             <div
               class="hmb-item-body absolute z-index-3"
               v-if="mitem.children.length != 0"
               v-show="mitem.collaspe"
+              @mouseleave="collaspe(mitem, midx)"
             >
               <div
                 class="hmd-item-b-item t-center fs16 pointer"
@@ -101,7 +103,7 @@ export default {
   mounted() {},
   methods: {
     // 控制菜单开关
-    collaspe(item, idx) {
+    collaspe(item, idx, type) {
       let status = item.collaspe;
       for (let m = 0; m < this.menu.length; m++) {
         this.menu[m].collaspe = false;
@@ -109,7 +111,9 @@ export default {
       if (item.haschiren) {
         this.menu[idx].collaspe = status ? false : true;
       } else {
-        this.headerRoute(item.value);
+        if (type == "click") {
+          this.headerRoute(item.value);
+        }
       }
     },
     // 头部路由跳转
@@ -153,8 +157,6 @@ export default {
           .hlm-item-icon {
             width: 24px;
             height: 24px;
-            border: 1px solid #979797;
-            background-color: #d8d8d8;
             border-radius: 100%;
             margin-top: 14px;
             overflow: hidden;
@@ -185,12 +187,12 @@ export default {
             line-height: 40px;
           }
           .hmb-item-label:hover {
-            color: #ff9696;
-            border-bottom: 3px solid #ff9696;
+            color: #bf6bac;
+            border-bottom: 3px solid #bf6bac;
           }
           .header-active {
-            color: #ff9696;
-            border-bottom: 3px solid #ff9696;
+            color: #bf6bac;
+            border-bottom: 3px solid #bf6bac;
           }
           .hmb-item-arraw {
             display: inline-block;
@@ -213,11 +215,10 @@ export default {
             width: calc(100% - 16px);
             border-bottom-left-radius: 4px;
             border-bottom-right-radius: 4px;
-            padding-bottom: 8px;
             .hmd-item-b-item {
               height: 40px;
               line-height: 40px;
-              border-bottom: 1px solid rgba(206, 135, 186, 1);
+              border-bottom: 1px solid rgba(206, 135, 186, 0.6);
             }
             .hmd-item-b-item:hover {
               background-color: #f5f5f5;
@@ -232,7 +233,7 @@ export default {
           display: block;
           width: 2px;
           height: 16px;
-          background-color: #ce87ba;
+          background-color: rgba(206, 135, 186, 0.6);
           position: absolute;
           top: 50%;
           margin-top: -8px;

@@ -49,27 +49,32 @@
               首页><span class="fs18">经典案例</span>
             </div>
           </div>
-          <div class="hp-s12-title fs30 t-center mt40 mb40">我是文章大标题</div>
+          <div class="hp-s12-title fs30 t-center mt40 mb40">
+            {{ article.title }}
+          </div>
           <div class="hp-s12-info flex">
-            <span class="hp-s12-info-item fs20 pr40">发布时间：2019.03.15</span>
-            <span class="hp-s12-info-item fs20 pl40">作者：子渊老师</span>
+            <span class="hp-s12-info-item fs20 pr40"
+              >发布时间：{{ article.date }}</span
+            >
+            <span class="hp-s12-info-item fs20 pl40"
+              >作者：{{ article.author }}</span
+            >
           </div>
-          <div class="hp-s12-image w100 mt20 pb20">
-            <img
-              class="hp-s12-img w100"
-              :src="`${baseUrl}statics/images/case/image1.png`"
-              alt
-            />
-          </div>
-          <div class="hp-s12-paragraph fs20 mt20">
-            我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容。
-          </div>
-          <div class="hp-s12-paragraph fs20 mt20">
-            我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容。
-          </div>
-          <div class="hp-s12-paragraph fs20 mt20">
-            我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容。
-          </div>
+          <span v-for="(item, index) in article.body" :key="index">
+            <div
+              class="hp-s12-image w100 mt20 pb20"
+              v-if="item.type == 'image'"
+            >
+              <img
+                class="hp-s12-img w100"
+                :src="`${baseUrl}${item.centent}`"
+                alt
+              />
+            </div>
+            <div v-else class="hp-s12-paragraph fs20 mt20">
+              {{ item.centent }}
+            </div>
+          </span>
           <div class="hp-s12-qcode absolute">
             <div class="hp-s12-qcode-image pt25 pb15">
               <img
@@ -93,7 +98,6 @@
 <script>
 import MyHeader from "@/components/Header.vue";
 import MyFooter from "@/components/Footer.vue";
-import article from "@/assets/article.json";
 export default {
   name: "Article",
   components: {
@@ -102,8 +106,12 @@ export default {
   },
   data() {
     return {
-      article: article
+      index: this.$route.query.index ? this.$route.query.index : 0,
+      article: null
     };
+  },
+  created() {
+    this.article = require("@/assets/articleDetails.json")[this.index];
   },
   mounted() {
     // eslint-disable-next-line no-console

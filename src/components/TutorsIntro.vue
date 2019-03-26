@@ -188,7 +188,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 0 0px;
   position: relative;
   background-color: #ffffff;
   .tutor-cont {

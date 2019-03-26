@@ -9,7 +9,7 @@
         <div class="hp-section1">
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_1.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">严格的保密协议</p>
@@ -18,7 +18,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_2.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">高效的服务体系</p>
@@ -27,7 +27,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_3.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">专业的导师团队</p>
@@ -36,7 +36,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_4.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">放心的用户保障</p>
@@ -51,7 +51,7 @@
           </div>
           <div class="hp-s2-body">
             <div class="hp-s2-item">
-              <div class="hp-s2-item-icon" style="padding:0px 0px 22px 0px;">
+              <div class="hp-s2-item-icon">
                 <img :src="`${baseUrl}statics/images/index/s2_icon1.png`" alt />
               </div>
               <div class="hp-s2-item-title fs20">爱情挽回</div>
@@ -60,7 +60,7 @@
               </div>
             </div>
             <div class="hp-s2-item">
-              <div class="hp-s2-item-icon" style="padding:0px 0px 29px 0px;">
+              <div class="hp-s2-item-icon">
                 <img :src="`${baseUrl}statics/images/index/s2_icon2.png`" alt />
               </div>
               <div class="hp-s2-item-title fs20">婚姻挽回</div>
@@ -69,7 +69,7 @@
               </div>
             </div>
             <div class="hp-s2-item">
-              <div class="hp-s2-item-icon" style="padding:0px 0px 17px 0px;">
+              <div class="hp-s2-item-icon">
                 <img :src="`${baseUrl}statics/images/index/s2_icon3.png`" alt />
               </div>
               <div class="hp-s2-item-title fs20">恋爱脱单</div>
@@ -78,7 +78,7 @@
               </div>
             </div>
             <div class="hp-s2-item">
-              <div class="hp-s2-item-icon" style="padding:0px 0px 33px 0px;">
+              <div class="hp-s2-item-icon">
                 <img :src="`${baseUrl}statics/images/index/s2_icon4.png`" alt />
               </div>
               <div class="hp-s2-item-title fs20">情商提高</div>
@@ -107,6 +107,9 @@
             <div class="hp-s4-body">
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
+                  <div class="look-details">
+                    <div class="center-div">查看全文</div>
+                  </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
                       <img
@@ -135,6 +138,9 @@
               </div>
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
+                  <div class="look-details">
+                    <div class="center-div">查看全文</div>
+                  </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
                       <img
@@ -163,6 +169,9 @@
               </div>
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
+                  <div class="look-details">
+                    <div class="center-div">查看全文</div>
+                  </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
                       <img
@@ -191,6 +200,9 @@
               </div>
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
+                  <div class="look-details">
+                    <div class="center-div">查看全文</div>
+                  </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
                       <img
@@ -222,6 +234,9 @@
         </div>
 
         <tutor-introduce></tutor-introduce>
+        <div class="hp-section3">
+          <img :src="`${baseUrl}statics/images/index/photo.png`" alt />
+        </div>
         <div class="hp-section6">
           <div class="hp-s6-ad">
             <img
@@ -378,6 +393,7 @@ export default {
               padding: 0px 0px 30px 0px;
               img {
                 width: 100%;
+                height: 147px;
               }
             }
             .hp-s2-item-title {
@@ -474,6 +490,35 @@ export default {
                 overflow: hidden;
                 box-sizing: border-box;
                 padding: 43px;
+                position: relative;
+                .look-details {
+                  display: none;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(227, 238, 255, 0.8);
+                  .center-div {
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    line-height: 200px;
+                    text-align: center;
+                    border-radius: 200px;
+                    background: rgba(102, 150, 224, 1);
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    font-size: 30px;
+                  }
+                }
+                &:hover {
+                  .look-details {
+                    display: block !important;
+                  }
+                }
                 .hp-s4-iconbar {
                   display: flex;
                   flex-wrap: nowrap;

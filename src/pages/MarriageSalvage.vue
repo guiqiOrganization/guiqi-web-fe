@@ -52,19 +52,9 @@
           :imagehref="'statics/images/marry/image2.png'"
         ></image-cont>
         <image-cont
-          :bodyclass="'image-body30'"
-          :contclass="'pt40 pl40 pr40'"
-          :imagehref="'statics/images/emotional/imagebtn1.png'"
-        ></image-cont>
-        <image-cont
           :bodyclass="'image-body100'"
           :contclass="'pt40'"
           :imagehref="'statics/images/marry/image3.png'"
-        ></image-cont>
-        <image-cont
-          :bodyclass="'image-body100'"
-          :contclass="'pt40'"
-          :imagehref="'statics/images/marry/image4.png'"
         ></image-cont>
         <image-cont
           :bodyclass="'image-body100'"
