@@ -130,8 +130,7 @@
                 <div class="hp-s10-i-title mt30 mb10 fs30 black3">
                   {{ aitem.title }}
                 </div>
-                <div class="hp-s10-i-detail fs16 black2">
-                  {{ aitem.detail }}
+                <div v-html=aitem.detail class="hp-s10-i-detail fs16 black2">
                 </div>
                 <div
                   class="hp-s10-i-href fs16 mt60"

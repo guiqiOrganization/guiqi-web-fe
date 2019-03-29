@@ -6,7 +6,7 @@
         <div class="hp-section11 mt25">
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_1.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">严格的保密协议</p>
@@ -15,7 +15,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_2.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">高效的服务体系</p>
@@ -24,7 +24,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_3.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">专业的导师团队</p>
@@ -33,7 +33,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_4.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">放心的用户保障</p>
@@ -53,26 +53,20 @@
             {{ article.title }}
           </div>
           <div class="hp-s12-info flex">
-            <span class="hp-s12-info-item fs20 pr40"
-              >发布时间：{{ article.date }}</span
-            >
-            <span class="hp-s12-info-item fs20 pl40"
-              >作者：{{ article.author }}</span
-            >
+            <span class="hp-s12-info-item fs20 pr40">发布时间：{{ article.date }}</span>
+            <span class="hp-s12-info-item fs20 pl40">作者：{{ article.author }}</span>
           </div>
           <span v-for="(item, index) in article.body" :key="index">
             <div
               class="hp-s12-image w100 mt20 pb20"
-              v-if="item.type == 'image'"
-            >
+              v-if="item.type == 'image'">
               <img
                 class="hp-s12-img w100"
                 :src="`${baseUrl}${item.centent}`"
                 alt
               />
             </div>
-            <div v-else class="hp-s12-paragraph fs20 mt20">
-              {{ item.centent }}
+            <div v-else v-html=item.centent class="hp-s12-paragraph fs20 mt20">
             </div>
           </span>
           <div class="hp-s12-qcode absolute">
