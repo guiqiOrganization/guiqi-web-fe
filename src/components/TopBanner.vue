@@ -12,7 +12,7 @@
         <p class="swiper-page-title2 fs32 white1 mt20">
           我们不仅是执行者，更是有思想的策划者
         </p>
-        <div class="swiper-page-button mt80">
+        <div class="swiper-page-button mt80" @click.stop="$brdge()">
           <button class="swiper-page-button-btn fs20">了解我们</button>
         </div>
       </div>

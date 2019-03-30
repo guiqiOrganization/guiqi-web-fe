@@ -240,6 +240,7 @@
         <div class="hp-section6">
           <div class="hp-s6-ad">
             <img
+              @click.stop="$brdge()"
               :src="`${baseUrl}statics/images/index/s6-advertisement.png`"
               alt
             />

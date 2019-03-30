@@ -76,9 +76,17 @@
                 </div>
                 <div class="hp-s7-b-right">
                   <div class="hp-s7-b-name fs24 black2">{{ titem.name }}</div>
-                  <div v-html=titem.title class="hp-s7-b-advantage black2"></div>
-                  <div v-html=titem.advantage class="hp-s7-b-advantage black2"></div>
-                  <div class="hp-s7-b-btn white1">咨询导师</div>
+                  <div
+                    v-html="titem.title"
+                    class="hp-s7-b-advantage black2"
+                  ></div>
+                  <div
+                    v-html="titem.advantage"
+                    class="hp-s7-b-advantage black2"
+                  ></div>
+                  <div class="hp-s7-b-btn white1" @click.stop="$brdge()">
+                    咨询导师
+                  </div>
                 </div>
               </div>
             </div>

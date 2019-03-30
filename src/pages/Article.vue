@@ -53,21 +53,29 @@
             {{ article.title }}
           </div>
           <div class="hp-s12-info flex">
-            <span class="hp-s12-info-item fs20 pr40">发布时间：{{ article.date }}</span>
-            <span class="hp-s12-info-item fs20 pl40">作者：{{ article.author }}</span>
+            <span class="hp-s12-info-item fs20 pr40"
+              >发布时间：{{ article.date }}</span
+            >
+            <span class="hp-s12-info-item fs20 pl40"
+              >作者：{{ article.author }}</span
+            >
           </div>
           <span v-for="(item, index) in article.body" :key="index">
             <div
               class="hp-s12-image w100 mt20 pb20"
-              v-if="item.type == 'image'">
+              v-if="item.type == 'image'"
+            >
               <img
                 class="hp-s12-img w100"
                 :src="`${baseUrl}${item.centent}`"
                 alt
               />
             </div>
-            <div v-else v-html=item.centent class="hp-s12-paragraph fs20 mt20">
-            </div>
+            <div
+              v-else
+              v-html="item.centent"
+              class="hp-s12-paragraph fs20 mt20"
+            ></div>
           </span>
           <div class="hp-s12-qcode absolute">
             <div class="hp-s12-qcode-image pt25 pb15">

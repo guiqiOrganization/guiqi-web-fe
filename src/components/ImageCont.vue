@@ -1,7 +1,12 @@
 <template>
   <div class="image-cont flex" :class="contclass">
     <div class="image-body" :class="bodyclass">
-      <img class="hpbody-section-image" :src="`${baseUrl}` + imagehref" alt />
+      <img
+        class="hpbody-section-image"
+        @click.stop="$brdge()"
+        :src="`${baseUrl}` + imagehref"
+        alt
+      />
     </div>
   </div>
 </template>

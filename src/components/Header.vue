@@ -10,7 +10,7 @@
           />
         </div>
         <div class="head-logo-menu absolute flex">
-          <div class="hlm-item flex">
+          <div class="hlm-item flex" @click.stop="$brdge()">
             <div class="hlm-item-icon relative overhidden">
               <img
                 class="hlm-item-icon-img w100 absolute"
@@ -18,17 +18,34 @@
                 alt
               />
             </div>
-            <div class="hlm-item-title fs14">在线咨询</div>
+            <div class="hlm-item-title hlm-item-title-btn fs14">在线咨询</div>
           </div>
-          <div class="hlm-item flex">
-            <div class="hlm-item-icon relative overhidden">
+          <div class="hlm-item flex relative">
+            <div
+              class="hlm-item-icon relative overhidden"
+              @mouseenter="showQrcode"
+              @mouseleave="hiddenQrcode"
+            >
               <img
                 class="hlm-item-icon-img w100 absolute"
                 :src="`${baseUrl}statics/images/index/header_icon_2.png`"
                 alt
               />
             </div>
-            <div class="hlm-item-title fs14">官方微信</div>
+            <div
+              class="hlm-item-title fs14"
+              @mouseenter="showQrcode"
+              @mouseleave="hiddenQrcode"
+            >
+              官方微信
+            </div>
+            <div class="hlm-item-qcode absolute" v-if="qrcodeshow">
+              <img
+                class="w100"
+                :src="`${baseUrl}statics/images/index/foot_qcode1.png`"
+                alt
+              />
+            </div>
           </div>
           <div class="hlm-item flex">
             <div class="hlm-item-icon relative overhidden">
@@ -52,8 +69,9 @@
             <div
               class="hmb-item-label t-center fs16 pointer"
               :class="{ 'header-active': currentActive == mitem.value }"
-              @click.stop="collaspe(mitem, midx, 'click')"
+              @click.stop="headerRoute(mitem)"
               @mouseenter="collaspe(mitem, midx, 'hover')"
+              @mouseleave="collaspe(mitem, midx, 'hover')"
             >
               {{ mitem.label }}
             </div>
@@ -61,7 +79,6 @@
               class="hmb-item-arraw pointer animate"
               :class="{ 'hmb-item-arraw__active': mitem.collaspe }"
               v-if="mitem.children.length != 0"
-              @mouseenter="collaspe(mitem, midx)"
             ></div>
             <div
               class="hmb-item-body absolute z-index-3"
@@ -72,7 +89,7 @@
               <div
                 class="hmd-item-b-item t-center fs16 pointer"
                 v-for="(mbitem, mbidx) in mitem.children"
-                @click.stop="headerRoute(mitem.value)"
+                @click.stop="headerRoute(mitem)"
                 :key="mbidx"
               >
                 {{ mbitem.label }}
@@ -97,29 +114,37 @@ export default {
   },
   data() {
     return {
-      menu: menu
+      menu: menu,
+      qrcodeshow: false
     };
   },
   mounted() {},
   methods: {
+    // 控制二维码弹窗显示
+    showQrcode() {
+      this.qrcodeshow = true;
+    },
+    // 控制二维码弹窗显示
+    hiddenQrcode() {
+      this.qrcodeshow = false;
+    },
     // 控制菜单开关
-    collaspe(item, idx, type) {
+    collaspe(item, idx) {
       let status = item.collaspe;
       for (let m = 0; m < this.menu.length; m++) {
         this.menu[m].collaspe = false;
       }
       if (item.haschiren) {
         this.menu[idx].collaspe = status ? false : true;
-      } else {
-        if (type == "click") {
-          this.headerRoute(item.value);
-        }
       }
     },
     // 头部路由跳转
-    headerRoute(path) {
+    headerRoute(item) {
+      for (let m = 0; m < this.menu.length; m++) {
+        this.menu[m].collaspe = false;
+      }
       this.$router.push({
-        path: path
+        path: item.value
       });
     }
   }
@@ -166,6 +191,26 @@ export default {
               left: 0;
             }
           }
+          .hlm-item-title-btn {
+            padding: 0px 20px;
+            background-color: #9ca0e5;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 12px;
+            margin-top: 16px;
+            color: #ffffff;
+          }
+          .hlm-item-qcode {
+            top: 52px;
+            left: 0px;
+            padding: 12px;
+            border-radius: 4px;
+            height: 120px;
+            width: 120px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.1);
+            z-index: 2019;
+          }
         }
       }
     }
@@ -202,11 +247,11 @@ export default {
             border-left: 1px solid #fbfbfb;
             border-bottom: 1px solid #525252;
             border-right: 1px solid #525252;
-            transform: rotate(45deg) translate(0, -3px);
+            transform: rotate(-45deg);
             margin-left: 4px;
           }
           .hmb-item-arraw__active {
-            transform: rotate(-45deg);
+            transform: rotate(45deg) translate(0, -3px);
           }
           .hmb-item-body {
             background-color: #fffbfb;
