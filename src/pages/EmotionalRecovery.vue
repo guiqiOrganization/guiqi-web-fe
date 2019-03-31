@@ -9,7 +9,7 @@
         <div class="hp-section1">
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_1.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">严格的保密协议</p>
@@ -18,7 +18,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_2.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">高效的服务体系</p>
@@ -27,7 +27,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_3.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">专业的导师团队</p>
@@ -36,7 +36,7 @@
           </div>
           <div class="hp-s1-item">
             <div class="hp-s1-item-icon">
-              <img :src="`${baseUrl}statics/images/index/s1_icon.png`" alt />
+              <img :src="`${baseUrl}statics/images/index/s1_icon_4.png`" alt />
             </div>
             <div class="hp-s1-item-title">
               <p class="hp-s1-item-text1 fs18">放心的用户保障</p>

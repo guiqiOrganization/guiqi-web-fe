@@ -56,7 +56,7 @@
               </div>
               <div class="hp-s2-item-title fs20">爱情挽回</div>
               <div class="hp-s2-item-text fs14">
-                没有找不回的爱情，只有不对的方法。轻松解决情感问题，赶走小三，还你甜蜜爱情
+                关系降格、复联破冰、印象重建、引导投资、二次吸引、长期关系维护
               </div>
             </div>
             <div class="hp-s2-item">
@@ -65,25 +65,25 @@
               </div>
               <div class="hp-s2-item-title fs20">婚姻挽回</div>
               <div class="hp-s2-item-text fs14">
-                没有找不回的爱情，只有不对的方法。轻松解决情感问题，赶走小三，还你甜蜜爱情
+                根源问题剖析、吸引力提升法则、核心姿态扭转、正确沟通方式、两性思维差异解析、解决婆媳矛盾
               </div>
             </div>
             <div class="hp-s2-item">
               <div class="hp-s2-item-icon">
                 <img :src="`${baseUrl}statics/images/index/s2_icon3.png`" alt />
               </div>
-              <div class="hp-s2-item-title fs20">恋爱脱单</div>
+              <div class="hp-s2-item-title fs20">分离小三</div>
               <div class="hp-s2-item-text fs14">
-                没有找不回的爱情，只有不对的方法。轻松解决情感问题，赶走小三，还你甜蜜爱情
+                找到出轨根本原因、形象改造能力提升、正确沟通、夫妻生活调节、攻心找到痛点、重燃夫妻激情
               </div>
             </div>
             <div class="hp-s2-item">
               <div class="hp-s2-item-icon">
                 <img :src="`${baseUrl}statics/images/index/s2_icon4.png`" alt />
               </div>
-              <div class="hp-s2-item-title fs20">情商提高</div>
+              <div class="hp-s2-item-title fs20">狙击真爱</div>
               <div class="hp-s2-item-text fs14">
-                没有找不回的爱情，只有不对的方法。轻松解决情感问题，赶走小三，还你甜蜜爱情
+                提高情商、读懂两性思维、聊天技巧（代聊）、通过言行举止了解心思、感情升温关系升级
               </div>
             </div>
           </div>
@@ -326,7 +326,7 @@ export default {
         content: "";
         display: block;
         height: 1px;
-        background-color: #cfd3fe;
+        background-color: #F2F2F2;
         width: 90%;
         left: 40px;
         bottom: 5px;
