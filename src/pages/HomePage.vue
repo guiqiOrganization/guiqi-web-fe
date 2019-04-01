@@ -108,7 +108,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(6)">查看全文</div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -121,17 +121,14 @@
                     <div class="hp-s4-num">01</div>
                   </div>
                   <div class="hp-s4-title fs18">
-                    简单聊天技巧，教你挽回异地恋
+                    从她说“我们不可能了”到成功复合，他只用了16天！
                   </div>
                   <div class="hp-s4-text">
                     <p class="hp-s4-text-p fs14">
-                      不同原因分手，分手之后的心态也不同。因矛盾而
-                      分手，男人会逼迫自己走出来，重新开始生活；因感情淡化而分手，男人会在分手时有一丝解脱。
+                      当你还沉浸在两人的爱情中时，她却突然提出分手，让你猝不及防。你只能一次次道歉求原谅，想尽了办法去挽回，结果却只换来她的一句“我们不可能了”。
                     </p>
                     <p class="hp-s4-text-p fs14">
-                      不要有太多质问的话， “你真的不爱我了吗?”
-                      这些话暴露了你强烈的需求感，会让TA觉得你很
-                      烦；二、不要旧事重提，计算谁对谁错......
+                      每当夜深人静时，你巴巴看着手机里保存的美好回忆，越想越无法接受她离开的事实。曾经的那些甜蜜时光一幕幕在脑海中浮现，仿佛她还在身边。
                     </p>
                   </div>
                 </div>
@@ -139,7 +136,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(7)">查看全文</div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -152,17 +149,14 @@
                     <div class="hp-s4-num">02</div>
                   </div>
                   <div class="hp-s4-title fs18">
-                    简单聊天技巧，教你挽回异地恋
+                    你道歉100次无效，他只用4步让女友回心转意!
                   </div>
                   <div class="hp-s4-text">
                     <p class="hp-s4-text-p fs14">
-                      不同原因分手，分手之后的心态也不同。因矛盾而
-                      分手，男人会逼迫自己走出来，重新开始生活；因感情淡化而分手，男人会在分手时有一丝解脱。
+                      电视里隐隐约约传出至尊宝那句经典台词：“曾经有一份真诚的爱情摆在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。
                     </p>
                     <p class="hp-s4-text-p fs14">
-                      不要有太多质问的话， “你真的不爱我了吗?”
-                      这些话暴露了你强烈的需求感，会让TA觉得你很
-                      烦；二、不要旧事重提，计算谁对谁错......
+                      如果上天能够给我一个再来一次的机会，我会对那个女孩子说三个字：我爱你。如果非要在这份爱上加上一个期限，我希望是……一万年！”
                     </p>
                   </div>
                 </div>
@@ -170,7 +164,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(8)">查看全文</div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -183,17 +177,14 @@
                     <div class="hp-s4-num">03</div>
                   </div>
                   <div class="hp-s4-title fs18">
-                    简单聊天技巧，教你挽回异地恋
+                    巧用攻心计逆转分手死局，原来挽回还可以这样做！
                   </div>
                   <div class="hp-s4-text">
                     <p class="hp-s4-text-p fs14">
-                      不同原因分手，分手之后的心态也不同。因矛盾而
-                      分手，男人会逼迫自己走出来，重新开始生活；因感情淡化而分手，男人会在分手时有一丝解脱。
+                      在感情中，我们总是相爱简单，相处太难。其实很多时候只是我们都不肯正面去解决问题，然后，各自在沉默中渐行渐远，最后就回不去了。
                     </p>
                     <p class="hp-s4-text-p fs14">
-                      不要有太多质问的话， “你真的不爱我了吗?”
-                      这些话暴露了你强烈的需求感，会让TA觉得你很
-                      烦；二、不要旧事重提，计算谁对谁错......
+                      然而，我们无法逃掉上天注定的离散，却可以避免人酿造的遗憾，千万别把那个曾对你百般呵护、体贴包容的人让别人捡走。
                     </p>
                   </div>
                 </div>
@@ -201,7 +192,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(9)">查看全文</div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -214,17 +205,14 @@
                     <div class="hp-s4-num">04</div>
                   </div>
                   <div class="hp-s4-title fs18">
-                    简单聊天技巧，教你挽回异地恋
+                    挽回必用策略，让绝情的她乖乖回到你身边
                   </div>
                   <div class="hp-s4-text">
                     <p class="hp-s4-text-p fs14">
-                      不同原因分手，分手之后的心态也不同。因矛盾而
-                      分手，男人会逼迫自己走出来，重新开始生活；因感情淡化而分手，男人会在分手时有一丝解脱。
+                      每当夜深人静，看着熟悉的房间，却再也找不到那个熟悉的身影。曾经你们甜蜜相拥的点点滴滴，仿佛洒遍了每一个角落，现在伸手触及的却是一片空旷；
                     </p>
                     <p class="hp-s4-text-p fs14">
-                      不要有太多质问的话， “你真的不爱我了吗?”
-                      这些话暴露了你强烈的需求感，会让TA觉得你很
-                      烦；二、不要旧事重提，计算谁对谁错......
+                      曾经满满的衣柜，如今只剩你一个人的衣服。熟悉的号码却再没有能够拨通的理由……
                     </p>
                   </div>
                 </div>
@@ -265,6 +253,16 @@ export default {
     MyFooter,
     MySwiper,
     TutorIntroduce
+  },
+  methods: {
+      goArticle(index) {
+          this.$router.push({
+              name: "Article",
+              query: {
+                  index: index
+              }
+          });
+      }
   }
 };
 </script>

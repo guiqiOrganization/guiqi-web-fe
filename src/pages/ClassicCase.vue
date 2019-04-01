@@ -56,13 +56,13 @@
             </div>
             <div class="hp-s8-right">
               <div class="hp-s8-r-title fs36 black3">
-                安夏老师，教你轻松搞定心仪的TA我也是大标题
+                “1”招猛击七寸，再绝情的她也会回头求复合
               </div>
               <div class="hp-s8-r-line mt20 mb20"></div>
               <div class="hp-s8-r-detail fs16">
-                我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容
+                和你相遇很幸运，还没来得及感谢你就转身入了人海中。一次简单的玩笑，两个人成了陌路。分手之后有一个艰难的过渡期，你疯狂的想她，想起你们过往甜蜜的点滴，你丢掉一切该有的姿态转身拥抱，怀抱落空。感情的经营就像烧制瓷器，必须掌握好火候，不断地煅烧，一步步升温。挽回同样也需要好的火候，才能暖入对方的心，让她回到你身边。
               </div>
-              <div class="hp-s8-r-btn mt15 fs18" @click.stop="goArticle">
+              <div class="hp-s8-r-btn mt15 fs18" @click.stop="goArticle(10)">
                 查看完整文章>>
               </div>
             </div>
@@ -75,14 +75,14 @@
           >
             <div class="hp-s9-cont pt80 flex">
               <div class="hp-s9-c-title w100_m fs36 black3">
-                安夏老师，教你轻松搞定心仪的TA
+                “1”招挽回绝杀技，让冷漠无情的她跪求复合
               </div>
               <div class="hp-s9-c-line mt20 mb20"></div>
               <div class="hp-s9-c-article flex relative">
                 <div class="hp-s9-c-detail fs18 ">
-                  我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容，我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容我是文章内容
+                  你总说我毛手毛脚的老爱打碎东西，家里的碗都不知道摔碎多少只了。所以你每次买了新的碗，都会偷偷藏起一个，你说有一天如果我需要那个碗的时候，就打电话问你，你会告诉我放在什么地方。今天我又不小心把碗打碎了，可是为什么我打电话给你，你却再也不愿意接起......
                 </div>
-                <div class="hp-s9-c-btn absolute" @click.stop="goArticle">
+                <div class="hp-s9-c-btn absolute" @click.stop="goArticle(11)">
                   查看完整文章>>
                 </div>
               </div>
