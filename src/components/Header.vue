@@ -10,7 +10,7 @@
           />
         </div>
         <div class="head-logo-menu absolute flex">
-          <div class="hlm-item flex" @click.stop="$brdge()">
+          <div class="hlm-item flex pointer" @click.stop="$brdge()">
             <div class="hlm-item-icon relative overhidden">
               <img
                 class="hlm-item-icon-img w100 absolute"
@@ -42,7 +42,7 @@
             <div class="hlm-item-qcode absolute" v-if="qrcodeshow">
               <img
                 class="w100"
-                :src="`${baseUrl}statics/images/index/foot_qcode1.png`"
+                :src="`${baseUrl}statics/images/index/foot_qcode1.jpg`"
                 alt
               />
             </div>

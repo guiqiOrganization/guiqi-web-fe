@@ -49,6 +49,7 @@
           :bodyclass="'image-body80'"
           :contclass="'top40'"
           :imagehref="'statics/images/team/image1.png'"
+          :isBrdge="true"
         ></image-cont>
         <image-cont
           :bodyclass="'image-body80'"
@@ -84,7 +85,10 @@
                     v-html="titem.advantage"
                     class="hp-s7-b-advantage black2"
                   ></div>
-                  <div class="hp-s7-b-btn white1" @click.stop="$brdge()">
+                  <div
+                    class="hp-s7-b-btn white1 pointer"
+                    @click.stop="$brdge()"
+                  >
                     咨询导师
                   </div>
                 </div>
@@ -96,6 +100,7 @@
           :bodyclass="'image-body100'"
           :contclass="'pb40'"
           :imagehref="'statics/images/team/image3.png'"
+          :isBrdge="true"
         ></image-cont>
       </div>
     </div>

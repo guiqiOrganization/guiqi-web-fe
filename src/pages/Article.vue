@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="hpbody-section relative" style="margin:0px 0px 300px 0px;">
-        <div class="hp-section12 mt100 relative">
+        <div id="hp-section12" class="hp-section12 mt100 relative">
           <div class="hp-s12-bread">
             <div class="hp-s12-bread-item fs18">
               首页><span class="fs18">经典案例</span>
@@ -81,7 +81,7 @@
             <div class="hp-s12-qcode-image pt25 pb15">
               <img
                 class="w100 pl25 pr25"
-                :src="`${baseUrl}statics/images/index/foot_qcode1.png`"
+                :src="`${baseUrl}statics/images/index/foot_qcode1.jpg`"
                 alt
               />
             </div>
@@ -116,8 +116,7 @@ export default {
     this.article = require("@/assets/articleDetails.json")[this.index];
   },
   mounted() {
-    // eslint-disable-next-line no-console
-    console.log(JSON.stringify(this.article));
+    window.scrollTo(0, 0);
   },
   methods: {
     goArticle() {

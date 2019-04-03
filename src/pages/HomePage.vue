@@ -108,7 +108,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(6)">
+                    <div class="center-div pointer" @click.stop="goArticle(6)">
                       查看全文
                     </div>
                   </div>
@@ -138,7 +138,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(7)">
+                    <div class="center-div pointer" @click.stop="goArticle(7)">
                       查看全文
                     </div>
                   </div>
@@ -168,7 +168,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(8)">
+                    <div class="center-div pointer" @click.stop="goArticle(8)">
                       查看全文
                     </div>
                   </div>
@@ -198,7 +198,7 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(9)">
+                    <div class="center-div pointer" @click.stop="goArticle(9)">
                       查看全文
                     </div>
                   </div>
@@ -234,7 +234,7 @@
           <img :src="`${baseUrl}statics/images/index/photo.png`" alt />
         </div>
         <div class="hp-section6">
-          <div class="hp-s6-ad">
+          <div class="hp-s6-ad pointer">
             <img
               @click.stop="$brdge()"
               :src="`${baseUrl}statics/images/index/s6-advertisement.png`"

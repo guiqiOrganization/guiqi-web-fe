@@ -1,7 +1,7 @@
 <template>
   <div class="swiper w100">
     <swiper :options="swiperOption" ref="mySwiper">
-      <swiper-slide>
+      <!-- <swiper-slide>
         <div class="swiper-page pb40 w100 relative flex">
           <div class="swiper-page-bg relative w100">
             <div class="swiper-page-bgimage w100">
@@ -36,14 +36,14 @@
             />
           </div>
         </div>
-      </swiper-slide>
+      </swiper-slide> -->
       <swiper-slide>
         <div class="swiper-page pb40 w100 relative flex">
           <div class="swiper-page-bg relative w100">
             <div class="swiper-page-bgimage w100">
               <img
                 class="head-logo-img w100"
-                :src="`${baseUrl}statics/images/index/swiper_bg.png`"
+                :src="`${baseUrl}statics/images/index/banner_01.jpg`"
                 alt
               />
             </div>
@@ -55,7 +55,7 @@
               />
             </div>
           </div>
-          <div class="swiper-page-body absolute pl40 z-index-2">
+          <!-- <div class="swiper-page-body absolute pl40 z-index-2">
             <p class="swiper-page-title1 fs60 white1">专业的知识，专业的服务</p>
             <p class="swiper-page-title1 fs60 white1">帮你挽回爱情</p>
             <p class="swiper-page-title2 fs32 white1 mt20">
@@ -64,7 +64,7 @@
             <div class="swiper-page-button mt80">
               <button class="swiper-page-button-btn">了解我们</button>
             </div>
-          </div>
+          </div> -->
           <div class="swiper-page-qcode absolute">
             <img
               :src="`${baseUrl}statics/images/index/colorful_qcode.png`"
@@ -79,7 +79,7 @@
             <div class="swiper-page-bgimage w100">
               <img
                 class="head-logo-img w100"
-                :src="`${baseUrl}statics/images/index/swiper_bg.png`"
+                :src="`${baseUrl}statics/images/index/banner_02.jpg`"
                 alt
               />
             </div>
@@ -91,7 +91,7 @@
               />
             </div>
           </div>
-          <div class="swiper-page-body absolute pl40 z-index-2">
+          <!-- <div class="swiper-page-body absolute pl40 z-index-2">
             <p class="swiper-page-title1 fs60 white1">专业的知识，专业的服务</p>
             <p class="swiper-page-title1 fs60 white1">帮你挽回爱情</p>
             <p class="swiper-page-title2 fs32 white1 mt20">
@@ -99,6 +99,32 @@
             </p>
             <div class="swiper-page-button mt80">
               <button class="swiper-page-button-btn fs20">了解我们</button>
+            </div>
+          </div> -->
+          <div class="swiper-page-qcode absolute">
+            <img
+              :src="`${baseUrl}statics/images/index/colorful_qcode.png`"
+              alt
+            />
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="swiper-page pb40 w100 relative flex">
+          <div class="swiper-page-bg relative w100">
+            <div class="swiper-page-bgimage w100">
+              <img
+                class="head-logo-img w100"
+                :src="`${baseUrl}statics/images/index/banner_03.jpg`"
+                alt
+              />
+            </div>
+            <div class="swiper-page-wave w100 absolute overhidden">
+              <img
+                class="head-logo-img"
+                :src="`${baseUrl}statics/images/index/white_wave.png`"
+                alt
+              />
             </div>
           </div>
           <div class="swiper-page-qcode absolute">

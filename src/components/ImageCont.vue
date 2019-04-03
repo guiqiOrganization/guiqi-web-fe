@@ -3,7 +3,8 @@
     <div class="image-body" :class="bodyclass">
       <img
         class="hpbody-section-image"
-        @click.stop="$brdge()"
+        :class="{ pointer: isBrdge }"
+        @click.stop="clicked"
         :src="`${baseUrl}` + imagehref"
         alt
       />
@@ -25,6 +26,17 @@ export default {
     bodyclass: {
       type: String,
       default: ""
+    },
+    isBrdge: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    clicked() {
+      if (this.isBrdge) {
+        this.$brdge();
+      }
     }
   }
 };

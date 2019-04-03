@@ -48,10 +48,12 @@
           :bodyclass="'image-body100'"
           :contclass="'pt80'"
           :imagehref="'statics/images/snipe/image1.png'"
+          :isBrdge="true"
         ></image-cont>
         <image-cont
           :bodyclass="'image-body100'"
           :imagehref="'statics/images/snipe/image2.png'"
+          :isBrdge="true"
         ></image-cont>
 
         <image-cont
@@ -63,11 +65,13 @@
           :bodyclass="'image-body100'"
           :contclass="'pt40'"
           :imagehref="'statics/images/snipe/image4.png'"
+          :isBrdge="true"
         ></image-cont>
         <image-cont
           :bodyclass="'image-body30'"
           :contclass="'pl40 pr40 pt80 pb80'"
           :imagehref="'statics/images/emotional/imagebtn1.png'"
+          :isBrdge="true"
         ></image-cont>
       </div>
     </div>

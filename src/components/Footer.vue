@@ -12,55 +12,65 @@
         <div class="foot-top-right absolute flex">
           <div class="ftr-href flex">
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('HomePage')"
             >
               首页
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('EmotionalRecovery')"
             >
               情感挽回
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('MarriageSalvage')"
             >
               婚姻挽回
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('AbruptionMistress')"
             >
               分离第三者
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('LoveSnipe')"
             >
               狙击真爱
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('AboutTeam')"
             >
               团队介绍
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('ClassicCase')"
             >
               经典案例
             </div>
             <div
-              class="ftr-href-section w25_m fs16 white1"
+              class="ftr-href-section w25_m fs16 white1 pointer"
               @click.stop="headerRoute('ServiceConcept')"
             >
               服务理念
             </div>
-            <div class="ftr-href-section w25_m fs16 white1">服务咨询</div>
-            <div class="ftr-href-section w25_m fs16 white1">友情链接</div>
+            <div
+              class="ftr-href-section w25_m fs16 white1 pointer"
+              @click.stop="$brdge()"
+            >
+              服务咨询
+            </div>
+            <div
+              class="ftr-href-section w25_m fs16 white1 pointer"
+              @click.stop="$brdge()"
+            >
+              友情链接
+            </div>
             <div class="ftr-href-section w50_m fs16 white1">
               服务热线：400-0173-520
             </div>
@@ -69,7 +79,7 @@
             <div class="foot-top-qcode-item">
               <img
                 class="w100"
-                :src="`${baseUrl}statics/images/index/foot_qcode1.png`"
+                :src="`${baseUrl}statics/images/index/foot_qcode1.jpg`"
                 alt
               />
             </div>
@@ -80,11 +90,9 @@
     <div class="foot-body-bottom flex w100">
       <div class="fbb-body pt10 pb10">
         <span class="foot-bottom-text fs14 white1"
-          >公司地址：广州市番禺区小谷围街外环东路280号</span
+          >湖南省长沙市岳麓区银盆岭街道绿地中央广场</span
         >
-        <span class="foot-bottom-text fs14 white1"
-          >Copyright© guiqi,lnc.All Rights Reserved. 粤ICP备16060296号-1</span
-        >
+        <span class="foot-bottom-text fs14 white1">湘ICP备19004494号-1</span>
       </div>
     </div>
   </div>

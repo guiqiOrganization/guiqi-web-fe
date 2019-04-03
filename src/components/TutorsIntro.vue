@@ -7,14 +7,11 @@
       </div>
       <div class="tutor-body">
         <swiper :options="swiperOption" ref="tutorSwiper">
-          <swiper-slide>
+          <swiper-slide v-for="(ti, t) in tlist" :key="t">
             <div class="tutor-slide tutor-slide1">
               <div class="tutor-slide-body">
                 <div class="tutor-slide-headimage">
-                  <img
-                    :src="`${baseUrl}statics/images/index/tutor_head1.png`"
-                    alt
-                  />
+                  <img :src="`${baseUrl}${ti.image}`" alt />
                 </div>
                 <div class="tutor-slide-summary">
                   <div class="tutor-slide-summary-quota">
@@ -24,24 +21,19 @@
                     />
                   </div>
                   <div class="tutor-slide-summary-name">
-                    <p class="tutor-slide-summary-title">吴有栋1</p>
+                    <p class="tutor-slide-summary-title">{{ ti.name }}</p>
                   </div>
                   <div class="tutor-slide-summary-position">
-                    <p class="tutor-slide-summary-title">国家二级心理咨询师</p>
+                    <p class="tutor-slide-summary-title">{{ ti.post }}</p>
                   </div>
                   <div class="tutor-slide-summary-text">
-                    <span
-                      >与美国婚姻家庭治疗协会(AAMFT)分会督导师Heather MacLetchie
-                      Ehinger(恩格女士)合作，创办美中班，学习美国婚姻家庭治疗实用模型与各种专用治疗方法，不断提升归期咨询师情感技能。与美国婚姻家庭治疗协会(AAMFT)分会督导师Heather
-                      MacLetchie
-                      Ehinger(恩格女士)合作，创办美中班，学习美国婚姻家庭治疗实用模型与各种专用治疗方法，不断提升归期咨询师情感技能。</span
-                    >
+                    <span>{{ ti.intro }}</span>
                   </div>
                 </div>
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide>
+          <!-- <swiper-slide>
             <div class="tutor-slide tutor-slide2 opacity">
               <div class="tutor-slide-body">
                 <div class="tutor-slide-headimage">
@@ -108,7 +100,7 @@
                 </div>
               </div>
             </div>
-          </swiper-slide>
+          </swiper-slide> -->
           <div class="tutor-slide-left-btn" slot="button-next">
             <img
               :src="`${baseUrl}statics/images/index/tutor_slide_btn.png`"
@@ -129,6 +121,7 @@
 <script>
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
+import tlist from "@/assets/tutor.json";
 export default {
   name: "TutorSlide",
   components: {
@@ -153,30 +146,24 @@ export default {
         },
         debugger: true
       },
-      currentIndex: 0
+      currentIndex: 0,
+      tlist: tlist
     };
   },
   methods: {
     slideChange() {
-      if (this.$refs.tutorSwiper.swiper == null) {
-        return;
-      } else {
-        let nodes = document.getElementsByClassName("tutor-slide");
-        for (let i = 0; i < nodes.length; i++) {
-          if (nodes[i].className.indexOf("opacity") < 0) {
-            nodes[i].classList.add("opacity");
-          }
-        }
-        let nodeIndex = this.$refs.tutorSwiper.swiper.realIndex + 1;
-        let activeNodes = document.getElementsByClassName(
-          "tutor-slide" + nodeIndex.toString()
-        );
-        for (let j = 0; j < activeNodes.length; j++) {
-          if (activeNodes[j].className.indexOf("opacity") > 0) {
-            activeNodes[j].classList.remove("opacity");
-          }
+      let nodes = document.getElementsByClassName("swiper-slide");
+      for (let i = 0; i < nodes.length; i++) {
+        if (nodes[i].className.indexOf("opacity") < 0) {
+          nodes[i].classList.add("opacity");
         }
       }
+      this.$nextTick(() => {
+        let active = document.getElementsByClassName("swiper-slide-active");
+        for (let j = 0; j < active.length; j++) {
+          active[j].classList.remove("opacity");
+        }
+      });
     }
   }
 };
@@ -254,7 +241,10 @@ export default {
           top: 0px;
           left: 0px;
           z-index: 9;
+          border-radius: 5px;
+          overflow: hidden;
           img {
+            border-radius: 5px;
             width: 100%;
           }
         }

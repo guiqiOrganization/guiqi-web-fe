@@ -59,11 +59,13 @@
         <image-cont
           :bodyclass="'image-body100'"
           :imagehref="'statics/images/marry/image5.png'"
+          :isBrdge="true"
         ></image-cont>
         <image-cont
           :bodyclass="'image-body30'"
           :contclass="'pt40 pb80'"
           :imagehref="'statics/images/emotional/imagebtn2.png'"
+          :isBrdge="true"
         ></image-cont>
       </div>
     </div>

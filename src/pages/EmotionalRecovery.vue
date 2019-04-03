@@ -53,6 +53,7 @@
           :bodyclass="'image-body30'"
           :contclass="'p40'"
           :imagehref="'statics/images/emotional/imagebtn1.png'"
+          :isBrdge="true"
         ></image-cont>
         <image-cont
           :bodyclass="'image-body100'"
@@ -68,6 +69,7 @@
           :bodyclass="'image-body30'"
           :contclass="'pt40 pb80'"
           :imagehref="'statics/images/emotional/imagebtn2.png'"
+          :isBrdge="true"
         ></image-cont>
       </div>
     </div>
