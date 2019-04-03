@@ -108,7 +108,9 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(6)">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(6)">
+                      查看全文
+                    </div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -136,7 +138,9 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(7)">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(7)">
+                      查看全文
+                    </div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -164,7 +168,9 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(8)">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(8)">
+                      查看全文
+                    </div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -192,7 +198,9 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
-                    <div class="center-div" @click.stop="goArticle(9)">查看全文</div>
+                    <div class="center-div" @click.stop="goArticle(9)">
+                      查看全文
+                    </div>
                   </div>
                   <div class="hp-s4-iconbar">
                     <div class="hp-s4-icon">
@@ -255,14 +263,14 @@ export default {
     TutorIntroduce
   },
   methods: {
-      goArticle(index) {
-          this.$router.push({
-              name: "Article",
-              query: {
-                  index: index
-              }
-          });
-      }
+    goArticle(index) {
+      this.$router.push({
+        name: "Article",
+        query: {
+          index: index
+        }
+      });
+    }
   }
 };
 </script>
@@ -324,7 +332,7 @@ export default {
         content: "";
         display: block;
         height: 1px;
-        background-color: #F2F2F2;
+        background-color: #f2f2f2;
         width: 90%;
         left: 40px;
         bottom: 5px;
@@ -390,9 +398,9 @@ export default {
             padding: 0px 40px;
             .hp-s2-item-icon {
               padding: 0px 0px 30px 0px;
+              height: 260px;
               img {
                 width: 100%;
-                height: 147px;
               }
             }
             .hp-s2-item-title {
