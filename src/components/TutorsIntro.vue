@@ -101,13 +101,13 @@
               </div>
             </div>
           </swiper-slide> -->
-          <div class="tutor-slide-left-btn" slot="button-next">
+          <div class="tutor-slide-left-btn animate" slot="button-next">
             <img
               :src="`${baseUrl}statics/images/index/tutor_slide_btn.png`"
               alt
             />
           </div>
-          <div class="tutor-slide-right-btn" slot="button-prev">
+          <div class="tutor-slide-right-btn animate" slot="button-prev">
             <img
               :src="`${baseUrl}statics/images/index/tutor_slide_btn.png`"
               alt
@@ -131,6 +131,12 @@ export default {
   data() {
     return {
       swiperOption: {
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+          waitForTransition: true
+        },
         initialSlide: 0,
         slidesPerView: 2,
         spaceBetween: 30,
@@ -292,7 +298,8 @@ export default {
       left: 43px;
       margin-top: -55px;
       z-index: 11;
-      opacity: 0.4;
+      display: none;
+      opacity: 0;
       img {
         width: 100%;
         height: 100%;
@@ -308,12 +315,20 @@ export default {
       right: 43px;
       margin-top: -55px;
       z-index: 11;
-      opacity: 0.4;
+      opacity: 0;
+      display: none;
       img {
         width: 100%;
         height: 100%;
         transform: rotate(180deg);
       }
+    }
+  }
+  .tutor-body:hover {
+    .tutor-slide-left-btn,
+    .tutor-slide-right-btn {
+      display: block;
+      opacity: 0.4;
     }
   }
   .opacity {

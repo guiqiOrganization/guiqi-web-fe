@@ -108,6 +108,14 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
+                    <div class="look-details-text">
+                      <p class="lds-text-item fs14">
+                        当你还沉浸在两人的爱情中时，她却突然提出分手，让你猝不及防。你只能一次次道歉求原谅，想尽了办法去挽回，结果却只换来她的一句“我们不可能了”。
+                      </p>
+                      <p class="lds-text-item fs14">
+                        每当夜深人静时，你巴巴看着手机里保存的美好回忆，越想越无法接受她离开的事实。曾经的那些甜蜜时光一幕幕在脑海中浮现，仿佛她还在身边。
+                      </p>
+                    </div>
                     <div class="center-div pointer" @click.stop="goArticle(6)">
                       查看全文
                     </div>
@@ -138,6 +146,14 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
+                    <div class="look-details-text">
+                      <p class="lds-text-item fs14">
+                        电视里隐隐约约传出至尊宝那句经典台词：“曾经有一份真诚的爱情摆在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。
+                      </p>
+                      <p class="lds-text-item fs14">
+                        如果上天能够给我一个再来一次的机会，我会对那个女孩子说三个字：我爱你。如果非要在这份爱上加上一个期限，我希望是……一万年！”
+                      </p>
+                    </div>
                     <div class="center-div pointer" @click.stop="goArticle(7)">
                       查看全文
                     </div>
@@ -168,6 +184,14 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
+                    <div class="look-details-text">
+                      <p class="lds-text-item fs14">
+                        在感情中，我们总是相爱简单，相处太难。其实很多时候只是我们都不肯正面去解决问题，然后，各自在沉默中渐行渐远，最后就回不去了。
+                      </p>
+                      <p class="lds-text-item fs14">
+                        然而，我们无法逃掉上天注定的离散，却可以避免人酿造的遗憾，千万别把那个曾对你百般呵护、体贴包容的人让别人捡走。
+                      </p>
+                    </div>
                     <div class="center-div pointer" @click.stop="goArticle(8)">
                       查看全文
                     </div>
@@ -198,6 +222,14 @@
               <div class="hp-s4-item">
                 <div class="hp-s4-item-body">
                   <div class="look-details">
+                    <div class="look-details-text">
+                      <p class="lds-text-item fs14">
+                        每当夜深人静，看着熟悉的房间，却再也找不到那个熟悉的身影。曾经你们甜蜜相拥的点点滴滴，仿佛洒遍了每一个角落，现在伸手触及的却是一片空旷；
+                      </p>
+                      <p class="lds-text-item fs14">
+                        曾经满满的衣柜，如今只剩你一个人的衣服。熟悉的号码却再没有能够拨通的理由……
+                      </p>
+                    </div>
                     <div class="center-div pointer" @click.stop="goArticle(9)">
                       查看全文
                     </div>
@@ -506,17 +538,26 @@ export default {
                   width: 100%;
                   height: 100%;
                   background: rgba(227, 238, 255, 0.8);
+                  .look-details-text {
+                    margin-top: 202px;
+                    .lds-text-item {
+                      margin-top: 15px;
+                      font-family: PingFangSC-Regular;
+                      font-weight: 400;
+                      color: rgba(136, 136, 136, 1);
+                      line-height: 20px;
+                      padding: 0px 51px;
+                    }
+                  }
                   .center-div {
                     position: absolute;
-                    width: 200px;
-                    height: 200px;
-                    line-height: 200px;
+                    width: 100%;
+                    height: 100px;
+                    line-height: 100px;
                     text-align: center;
-                    border-radius: 200px;
                     background: rgba(102, 150, 224, 1);
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
+                    left: 0;
+                    bottom: 0;
                     color: #fff;
                     font-size: 30px;
                   }
@@ -524,6 +565,14 @@ export default {
                 &:hover {
                   .look-details {
                     display: block !important;
+                    .look-details-text {
+                      margin-top: 102px;
+                    }
+                  }
+                  .hp-s4-iconbar,
+                  .hp-s4-title,
+                  .hp-s4-text {
+                    opacity: 0;
                   }
                 }
                 .hp-s4-iconbar {

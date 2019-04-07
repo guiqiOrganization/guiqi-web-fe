@@ -151,7 +151,14 @@ export default {
   },
   data() {
     return {
-      swiperOption: {}
+      swiperOption: {
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+          waitForTransition: true
+        }
+      }
     };
   }
 };

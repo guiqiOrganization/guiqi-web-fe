@@ -66,10 +66,10 @@
               服务咨询
             </div>
             <!--<div-->
-              <!--class="ftr-href-section w25_m fs16 white1 pointer"-->
-              <!--@click.stop="$brdge()"-->
+            <!--class="ftr-href-section w25_m fs16 white1 pointer"-->
+            <!--@click.stop="$brdge()"-->
             <!--&gt;-->
-              <!--友情链接-->
+            <!--友情链接-->
             <!--</div>-->
             <div class="ftr-href-section w50_m fs16 white1">
               服务热线：400-9629-520
