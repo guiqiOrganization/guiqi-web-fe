@@ -74,7 +74,9 @@
         <div class="hp-section9 w100">
           <div
             class="hp-s9-body flex w100 relative"
-            :style="`background:url(${baseUrl}statics/images/case/image2.png)`"
+            :style="
+              `background:url(${baseUrl}statics/images/case/image2.png) no-repeat`
+            "
           >
             <div class="hp-s9-cont pt80 flex">
               <div class="hp-s9-c-title w100_m fs36 black3">
@@ -121,7 +123,7 @@
         <div class="hp-section10 w100_m pt40 pl60 pr60 pb100 mb40">
           <div class="hp-s10-body w100_m flex">
             <div
-              class="hp-s10-item mt60 p40"
+              class="hp-s10-item mt80 p40"
               v-for="(aitem, aidx) in article"
               :key="aidx"
             >
