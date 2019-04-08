@@ -96,21 +96,21 @@
                 <div class="hp-s9-c-pitem overhidden">
                   <img
                     class="hp-s9-cpitem-image w100 "
-                    :src="`${baseUrl}statics/images/case/image2.png`"
+                    :src="`${baseUrl}statics/images/case/image3.png`"
                     alt
                   />
                 </div>
                 <div class="hp-s9-c-pitem overhidden">
                   <img
                     class="hp-s9-cpitem-image w100 "
-                    :src="`${baseUrl}statics/images/case/image2.png`"
+                    :src="`${baseUrl}statics/images/case/image4.png`"
                     alt
                   />
                 </div>
                 <div class="hp-s9-c-pitem overhidden">
                   <img
                     class="hp-s9-cpitem-image w100 "
-                    :src="`${baseUrl}statics/images/case/image2.png`"
+                    :src="`${baseUrl}statics/images/case/image5.png`"
                     alt
                   />
                 </div>
