@@ -87,7 +87,7 @@
             </div>
             <div class="hp-s12-qcode-text fs14 t-center">微信扫一扫</div>
             <div class="hp-s12-qcode-text fs14 t-center pb25">
-              关注归期公众号
+              关注遇见公众号
             </div>
           </div>
         </div>

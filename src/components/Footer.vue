@@ -90,7 +90,7 @@
     <div class="foot-body-bottom flex w100">
       <div class="fbb-body pt10 pb10">
         <span class="foot-bottom-text fs14 white1"
-          >湖南省长沙市岳麓区银盆岭街道绿地中央广场</span
+          >地址:湖南省长沙市岳麓区银盆岭街道绿地中央广场</span
         >
         <span class="foot-bottom-text fs14 white1">湘ICP备19004494号-1</span>
       </div>

@@ -18,6 +18,6 @@ module.exports = {
     }
   },
   pwa: {
-    name: "归期"
+    name: "遇见"
   }
 };
